@@ -1,0 +1,4 @@
+/* Ajustes que só fazem sentido em telas estreitas */
+@media (max-width: 480px){
+  .brand-name{display:none}
+}
