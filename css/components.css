@@ -1,4 +1,4 @@
-/* Botões */
+/* ===== BOTÕES ===== */
 button, .btn {
   background: var(--color-primary);
   color: white;
@@ -6,6 +6,8 @@ button, .btn {
   padding: var(--sp-8) var(--sp-16);
   border-radius: 6px;
   cursor: pointer;
+  font-size: var(--font-md);
+  transition: background 0.2s ease-in-out;
 }
 
 button:hover, .btn:hover {
@@ -17,40 +19,81 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Cards */
+/* ===== CARDS ===== */
 .card {
   background: white;
-  padding: var(--sp-16);
+  padding: var(--sp-24);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--sp-32);
 }
 
-/* Formulários */
-form input, form textarea {
-  width: 100%;
-  margin-bottom: var(--sp-16);
+/* ===== FORMULÁRIOS ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-16);
+}
+
+fieldset {
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 8px;
+  padding: var(--sp-24);
+  background: var(--color-neutral-100);
+}
+
+legend {
+  padding: 0 var(--sp-8);
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--sp-8);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-neutral-900);
+}
+
+/* Corrige largura dos inputs dentro do padding do fieldset */
+input, textarea, select {
+  width: calc(100% - var(--sp-16));
   padding: var(--sp-8);
   border-radius: 6px;
   border: 1px solid var(--color-neutral-300);
+  font-size: var(--font-md);
+  box-sizing: border-box;
 }
 
-form input:focus, form textarea:focus {
+textarea {
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
   outline: 2px solid var(--color-primary);
 }
 
-/* Mobile */
-.menu-toggle {
-  display: none;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 28px;
+/* ===== ALERTAS E FEEDBACK ===== */
+.alert {
+  padding: var(--sp-16);
+  border-radius: 8px;
+  border: 1px solid var(--color-neutral-300);
+  background: var(--color-neutral-200);
+  margin-bottom: var(--sp-16);
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .menu-toggle { display: block; margin: 8px auto; }
-  nav ul { display: none; flex-direction: column; }
-  nav ul.open { display: flex; }
-  .dropdown { position: static; box-shadow: none; background: var(--color-secondary); }
-  .dropdown a { color: white; }
+  .card {
+    padding: var(--sp-16);
+  }
+
+  fieldset {
+    padding: var(--sp-16);
+  }
+
+  input, textarea, select {
+    width: 100%;
+  }
 }
