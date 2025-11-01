@@ -1,100 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Projetos Sociais - Vinculo de Amor</title>
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos Sociais - Vínculo de Amor</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-
 <body>
-    <!-- Cabeçalho e Menu de Navegação -->
-    <header>
-       <img src="/Imagens/logo_vinculo-de-amor.png" alt="Logotipo da Vinculo de Amor" width="120">
-       <h1>ONG Vinculo de Amor</h1>
+  <header>
+    <img src="imagens/logo_vinculo-de-amor.png" alt="Logotipo da Vínculo de Amor" width="120">
+    <h1>ONG Vínculo de Amor</h1>
 
-       <nav>
-           <ul>
-             <li><a href="index.html">Inicio</a></li>
-             <li><a href="projeto.html">Projetos</a></li>
-             <li><a href="cadastro.html">Seja um Voluntário</a></li>
-           </ul> 
-       </nav>
-    </header>
-    
-    <main>
-       <!-- Introdução -->
-       <section>
-         <h2>Introdução</h2>
-         <p>No Vínculo de Amor acreditamos que cada vida importa. Nossos projetos unem voluntários e apoiadores para resgatar, cuidar e preparar animais para uma nova chance de amor e segurança.</p>
-       </section>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
 
-       <!-- Nossos Projetos -->
-       <section>
-         <h2>Nossos Projetos</h2>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li class="has-dropdown">
+          <a href="projeto.html">Projetos ▾</a>
+          <ul class="dropdown">
+            <li><a href="resgate.html">Projeto Resgate</a></li>
+            <li><a href="reabilitacao.html">Projeto Reabilitar</a></li>
+            <li><a href="novo-lar.html">Projeto Novo Lar</a></li>
+            <li><a href="educacao-conscientizacao.html">Educação e Conscientização</a></li>
+          </ul>
+        </li>
+        <li><a href="cadastro.html">Seja um Voluntário</a></li>
+      </ul>
+    </nav>
+  </header>
 
-         <article>
-             <h3>Projeto Resgate</h3>
-             <p>Atuamos em resgates emergenciais de animais abandonados ou em situação de risco, garantindo atendimento rápido e seguro.</p>
-             <img src="/Imagens/resgate_projetos.jpg" alt="Resgate de Animais" width="200">
-             <img src="/Imagens/resgates-2_projetos.jpeg" alt="Cachorro Resgatado" width="200">
-         </article>
+  <main>
+    <section>
+      <h2>Introdução</h2>
+      <p>No Vínculo de Amor acreditamos que cada vida importa. Nossos projetos unem voluntários e apoiadores para resgatar, cuidar e preparar animais para uma nova chance de amor e segurança.</p>
+    </section>
 
-         <article>
-             <h3>Projeto Reabilitar</h3>
-             <p>Fornecemos tratamento veterinário, vacinas, castração e suporte emocional até que o animal esteja pronto para adoção.</p>
-             <img src="/Imagens/reabilitar-projetos.jpg" alt="Vacinação de Animais" width="200">
-             <img src="/Imagens/reabilitar-2_projetos.jpg" alt="Cuidados Veterinários" width="200">
-         </article>
+    <section>
+      <h2>Nossos Projetos</h2>
 
-         <article>
-             <h3>Projeto Novo Lar</h3>
-             <p>Promovemos feiras e campanhas de adoção responsável, conectando animais preparados com famílias amorosas.</p>
-             <img src="/Imagens/lar_temporario-projetos.jpg" alt="Feira Adoção" width="200">
-             <img src="/Imagens/lar-temporario2_projetos.jpg" alt="Novo Lar" width="200">
-         </article>
+      <article class="card">
+        <h3>Projeto Resgate</h3>
+        <p>Atuamos em resgates emergenciais de animais abandonados ou em situação de risco, garantindo atendimento rápido e seguro.</p>
+        <div class="image-gallery">
+          <img src="imagens/resgate_projetos.jpg" alt="Resgate de Animais" width="200">
+          <img src="imagens/resgates-2_projetos.jpeg" alt="Cachorro Resgatado" width="200">
+        </div>
+      </article>
 
-         <article>
-             <h3>Projeto Educação e Conscientização</h3>
-             <p>Levamos palestras e ações educativas sobre adoção consciente, cuidados e respeito aos animais.</p>
-             <img src="/Imagens/educacao_projetos.jpeg" alt="Conscientização de alunos" width="200">
-             <img src="/Imagens/conscientizacao_projetos.webp" alt="Educação e Conscientização" width="200">
-         </article>
-       </section>
+      <article class="card">
+        <h3>Projeto Reabilitar</h3>
+        <p>Fornecemos tratamento veterinário, vacinas, castração e suporte emocional até que o animal esteja pronto para adoção.</p>
+        <div class="image-gallery">
+          <img src="imagens/reabilitar-projetos.jpg" alt="Vacinação de Animais" width="200">
+          <img src="imagens/reabilitar-2_projetos.jpg" alt="Cuidados Veterinários" width="200">
+        </div>
+      </article>
 
-       <!-- Voluntariado -->
-       <section>
-         <h2>Seja Voluntário</h2>
-         <p>Junte-se a nós! Voluntários são o coração do Vínculo de Amor. Você pode ajudar em resgates, transporte, eventos, lar temporário ou até com comunicação e redes sociais.</p>
-         <p><a href="/cadastro.html">Quero Ser Voluntário</a></p>
-       </section>
+      <article class="card">
+        <h3>Projeto Novo Lar</h3>
+        <p>Promovemos feiras e campanhas de adoção responsável, conectando animais preparados com famílias amorosas.</p>
+        <div class="image-gallery">
+          <img src="imagens/lar_temporario-projetos.jpg" alt="Feira de Adoção" width="200">
+          <img src="imagens/lar-temporario2_projetos.jpg" alt="Novo Lar" width="200">
+        </div>
+      </article>
 
-       <!-- Como Doar -->
-       <section>
-         <h2>Como Doar</h2>
-         <p>Sua doação ajuda a salvar vidas! Aceitamos doações financeiras, ração, medicamentos e materiais de limpeza. Cada contribuição faz diferença.</p>
+      <article class="card">
+        <h3>Projeto Educação e Conscientização</h3>
+        <p>Levamos palestras e ações educativas sobre adoção consciente, cuidados e respeito aos animais.</p>
+        <div class="image-gallery">
+          <img src="imagens/educacao_projetos.jpeg" alt="Conscientização de alunos" width="200">
+          <img src="imagens/conscientizacao_projetos.webp" alt="Educação e Conscientização" width="200">
+        </div>
+      </article>
+    </section>
 
-         <aside>
-             <p><strong>Pix:</strong> vinculodeamor@ong.org</p>
-             <p><strong>Doações físicas:</strong> Rua da Esperança, 150 - Bairro Novo Horizonte, São Paulo/SP - CEP: 01234-567</p>
-         </aside>
-       </section>
+    <section class="card">
+      <h2>Seja Voluntário</h2>
+      <p>Junte-se a nós! Voluntários são o coração do Vínculo de Amor. Você pode ajudar em resgates, transporte, eventos, lar temporário ou até com comunicação e redes sociais.</p>
+      <a href="cadastro.html" class="btn">Quero Ser Voluntário</a>
+    </section>
 
-       <!-- Resultados -->
-       <section>
-         <h2>Resultados e Impacto</h2>
-         <p>Em 2024, resgatamos mais de 120 animais, realizamos 80 adoções e contamos com o apoio de 30 voluntários ativos. Cada número representa uma história de amor reescrita.</p>
-         <img src="/Imagens/grafico_projetos_vinculo_de_amor_limpo.png" alt="grafico de crescimento" width="350">
-       </section>
-   </main>
+    <section class="card">
+      <h2>Como Doar</h2>
+      <p>Sua doação ajuda a salvar vidas! Aceitamos doações financeiras, ração, medicamentos e materiais de limpeza.</p>
+      <aside>
+        <p><strong>Pix:</strong> vinculodeamor@ong.org</p>
+        <p><strong>Doações físicas:</strong> Rua da Esperança, 150 - Bairro Novo Horizonte, São Paulo/SP - CEP: 01234-567</p>
+      </aside>
+    </section>
 
-   <footer>
-        <p>&copy;2025 ONG Vinculo de Amor. Todos os direitos reservados.</p>
-   </footer>
+    <section>
+      <h2>Resultados e Impacto</h2>
+      <p>Em 2024, resgatamos mais de 120 animais, realizamos 80 adoções e contamos com o apoio de 30 voluntários ativos.</p>
+      <img src="imagens/grafico_projetos_vinculo_de_amor_limpo.png" alt="Gráfico de crescimento" width="350">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2025 ONG Vínculo de Amor. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
