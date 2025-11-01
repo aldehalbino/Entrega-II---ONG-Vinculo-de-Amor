@@ -1,0 +1,29 @@
+.grid{display:grid; gap:var(--grid-gap)}
+.grid-12{grid-template-columns:repeat(12, minmax(0,1fr))}
+
+/* Colunas base */
+.col-span-12{grid-column:span 12}
+.col-span-8{grid-column:span 8}
+.col-span-6{grid-column:span 6}
+.col-span-4{grid-column:span 4}
+.col-span-3{grid-column:span 3}
+
+/* Breakpoints (5) */
+@media (min-width:var(--bp-sm)){
+  .col-span-sm-12{grid-column:span 12}
+  .col-span-sm-6{grid-column:span 6}
+  .col-span-sm-4{grid-column:span 4}
+}
+@media (min-width:var(--bp-md)){
+  .col-span-md-12{grid-column:span 12}
+  .col-span-md-8{grid-column:span 8}
+  .col-span-md-6{grid-column:span 6}
+  .col-span-md-4{grid-column:span 4}
+}
+@media (min-width:var(--bp-lg)){
+  .col-span-lg-4{grid-column:span 4}
+  .col-span-lg-3{grid-column:span 3}
+}
+@media (min-width:var(--bp-xl)){
+  .container{--container-max:1280px}
+}
