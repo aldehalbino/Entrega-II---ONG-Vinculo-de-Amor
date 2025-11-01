@@ -117,11 +117,4 @@ Menus, imagens e textos ajustam-se automaticamente para garantir **acessibilidad
 1. Acesse o link público do repositório no GitHub:  
    [https://github.com/SEU_USUARIO/Entrega-II-Vinculo-de-Amor](#)  
 2. Clique em **Code → Download ZIP**  
-3. Extraia a pasta e abra o arquivo **index.html** no navegador.  
-
----
-
-## Agradecimento  
-
-Projeto desenvolvido com carinho para a disciplina de **Desenvolvimento Front-End II**,  
-com o propósito de mostrar que **amor e tecnologia também podem salvar vidas.**   
+3. Extraia a pasta e abra o arquivo **index.html** no navegador.    
