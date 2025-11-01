@@ -1,42 +1,24 @@
-*{box-sizing:border-box}
-html:focus-within{scroll-behavior:smooth}
-body{
-  margin:0; color:var(--color-text); background:var(--color-bg);
-  font-family:var(--font-sans); font-size:var(--fs-16); line-height:1.6;
-}
-img,video{max-width:100%; height:auto; display:block}
-a{color:inherit; text-decoration:none}
-.container{width:min(100% - 32px, var(--container-max)); margin-inline:auto}
-.section{padding:var(--sp-48) 0}
-.mb-32{margin-bottom:var(--sp-32)} .mt-16{margin-top:var(--sp-16)} .mt-24{margin-top:var(--sp-24)}
-.lead{font-size:var(--fs-18); color:var(--color-muted)}
-
-h1,h2,h3{margin:0 0 var(--sp-16); line-height:1.25}
-h1{font-size:clamp(2rem, 3vw + 1rem, var(--fs-48))}
-h2{font-size:var(--fs-32)} h3{font-size:var(--fs-24)} p{margin:0 0 var(--sp-16)}
-
-.skip-link{position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden}
-.skip-link:focus{left:16px; top:16px; width:auto; height:auto; background:#000; color:#fff; padding:8px 12px; border-radius:8px}
-
-.site-header{
-  position:sticky; top:0; z-index:40; background:rgba(255,255,255,.8);
-  backdrop-filter: blur(6px); border-bottom:1px solid var(--color-border);
-}
-.header-inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
-.brand{display:flex; align-items:center; gap:12px; font-weight:700}
-.brand img{height:40px; width:auto}
-.brand-name{letter-spacing:.2px}
-
-.nav .nav-list{display:flex; gap:16px; list-style:none; margin:0; padding:0}
-
-.hero{padding:var(--sp-32) 0 var(--sp-16); background:linear-gradient(180deg, var(--color-soft), transparent)}
-.video-wrap{border:1px solid var(--color-border); border-radius:16px; overflow:hidden; box-shadow:var(--shadow-1); background:var(--color-surface)}
-.hero-video{display:block; width:100%}
-
-.card{
-  background:var(--color-surface); border:1px solid var(--color-border);
-  border-radius:16px; padding:var(--sp-16); box-shadow:var(--shadow-1)
+/* Estilos globais e tipografia */
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-neutral-900);
+  background: var(--color-neutral-200);
+  margin: 0;
 }
 
-.site-footer{border-top:1px solid var(--color-border); padding:var(--sp-24) 0; color:var(--color-muted)}
-.image-gallery{display:flex; flex-wrap:wrap; gap:16px; align-items:center}
+h1, h2, h3 {
+  color: var(--color-primary-dark);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+img {
+  border-radius: 8px;
+}

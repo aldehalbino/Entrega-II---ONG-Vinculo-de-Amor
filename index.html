@@ -1,183 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ONG Vínculo de Amor — Uma vida resgatada, um elo refeito</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Vínculo de Amor - Uma vida resgatada, um elo refeito</title>
+  <!-- Inclusão dos arquivos CSS organizados -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="imagens/logo_vinculo-de-amor.png" alt="Logotipo Vínculo de Amor">
-        <span class="brand-name">Vínculo de Amor</span>
-      </a>
+  <!-- Cabeçalho e navegação -->
+  <header>
+    <img src="imagens/logo_vinculo-de-amor.png" alt="Logotipo da Vínculo de Amor" width="120">
+    <h1>ONG Vínculo de Amor</h1>
 
-      <nav class="nav" aria-label="Principal">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html">Início</a></li>
-          <li class="has-dropdown">
-            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret">▾</span></button>
-            <ul class="dropdown" role="menu">
-              <li role="none"><a role="menuitem" href="resgates.html">Projeto Resgate</a></li>
-              <li role="none"><a role="menuitem" href="reabilitacao.html">Projeto Reabilitar</a></li>
-              <li role="none"><a role="menuitem" href="novo-lar.html">Projeto Novo Lar</a></li>
-              <li role="none"><a role="menuitem" href="educacao-conscientizacao.html">Educação e Conscientização</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="projeto.html">Projeto</a></li>
-          <li><a class="nav-link" href="cadastro.html">Seja um Voluntário</a></li>
-        </ul>
-      </nav>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
 
-      <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <nav id="mobileMenu" class="mobile-nav" hidden>
-      <ul>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
         <li class="has-dropdown">
-          <button class="mobile-link" aria-haspopup="true" aria-expanded="false">Projetos <span class="caret">▾</span></button>
-          <ul class="dropdown" hidden>
-            <li><a href="resgates.html">Projeto Resgate</a></li>
+          <a href="projeto.html">Projetos ▾</a>
+          <ul class="dropdown">
+            <li><a href="resgate.html">Projeto Resgate</a></li>
             <li><a href="reabilitacao.html">Projeto Reabilitar</a></li>
             <li><a href="novo-lar.html">Projeto Novo Lar</a></li>
             <li><a href="educacao-conscientizacao.html">Educação e Conscientização</a></li>
           </ul>
         </li>
-        <li><a class="mobile-link" href="projeto.html">Projeto</a></li>
-        <li><a class="mobile-link" href="cadastro.html">Seja um Voluntário</a></li>
+        <li><a href="cadastro.html">Seja um Voluntário</a></li>
       </ul>
     </nav>
+
+    <video width="640" height="360" controls autoplay loop muted playsinline>
+      <source src="videos/video-hub_vinculodeamor.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos em HTML5.
+    </video>
   </header>
-  <div class="container hero">
-    <div class="video-wrap">
-      <video class="hero-video" controls autoplay loop muted playsinline>
-        <source src="videos/video-hub_vinculodeamor.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos em HTML5.
-      </video>
-    </div>
-  </div>
 
-  <main id="conteudo" class="container section">
-    <section class="card grid grid-12 gap-24 mb-32">
-      <div class="col-span-12">
-        <h2>Sobre Nós</h2>
-        <p class="lead"><strong>Vínculo de Amor</strong> é uma ONG dedicada ao resgate, reabilitação e adoção responsável de
-        <strong>animais domésticos</strong>. Atuamos do resgate à reintegração em lares seguros, com acompanhamento
-        veterinário e suporte pós-adoção.</p>
-      </div>
-
-      <div class="image-gallery col-span-12">
-        <img src="imagens/antes-depois_irene.png" alt="Antes e Depois do Resgate da cachorrinha Irene" width="250">
-        <img src="imagens/antes-depois_simon.jpg" alt="Antes e Depois do Resgate do gatinho Simon" width="300">
+  <main>
+    <section>
+      <h2>Sobre Nós</h2>
+      <p><strong>Vínculo de Amor</strong> é uma Organização Não Governamental (ONG) dedicada ao resgate, reabilitação e colocação em lares seguros e carinhosos de <strong>animais domésticos abandonados</strong>. Nosso foco está em refazer o elo, o "vínculo" rompido pelo abandono, garantindo que esses seres encontrem novamente a segurança e o carinho que merecem...</p>
+      <div class="image-gallery">
+        <img src="imagens/antes-depois_irene.png" alt="Antes e Depois Irene" width="250">
+        <img src="imagens/antes-depois_simon.jpg" alt="Antes e Depois Simon" width="300">
         <img src="imagens/feira-adocao.jpg" alt="Feira de Adoção" width="350">
       </div>
-
-      <div class="col-span-12">
-        <a href="projeto.html" class="btn btn-secondary">Saiba Mais</a>
-      </div>
     </section>
 
-    <section class="grid grid-12 gap-24 mb-32">
-      <article class="card col-span-4 col-span-md-12">
+    <section class="grid-3">
+      <div class="card">
         <h2>Missão</h2>
-        <p>Resgatar, recuperar e reintegrar animais abandonados ou em risco, promovendo bem-estar e lares responsáveis.</p>
-      </article>
+        <p>Resgatar, recuperar e reintegrar animais domésticos abandonados...</p>
+      </div>
 
-      <article class="card col-span-4 col-span-md-12">
+      <div class="card">
         <h2>Visão</h2>
-        <p>Ser referência nacional em bem-estar animal e reduzir o número de abandonos por meio de educação e rede de apoio.</p>
-      </article>
+        <p>Ser referência nacional em bem-estar animal...</p>
+      </div>
 
-      <article class="card col-span-4 col-span-md-12">
+      <div class="card">
         <h2>Valores</h2>
         <ul>
-          <li><strong>União:</strong> Refazer o elo entre humanos e animais.</li>
-          <li><strong>Compromisso vitalício:</strong> Suporte também após a adoção.</li>
-          <li><strong>Inclusão:</strong> Toda vida importa.</li>
-          <li><strong>Excelência:</strong> Cuidado médico, psicológico e social.</li>
+          <li><strong>União:</strong> Refazer o elo entre o animal e o ser humano.</li>
+          <li><strong>Compromisso Vitalício:</strong> O cuidado não termina na adoção.</li>
+          <li><strong>Inclusão:</strong> Valorizar cada vida.</li>
+          <li><strong>Excelência:</strong> Na recuperação médica e social.</li>
         </ul>
-      </article>
+      </div>
     </section>
 
-    <section class="grid grid-12 gap-24">
-      <div class="card col-span-6 col-span-md-12">
-        <h3>Fale Conosco</h3>
-        <form class="form" novalidate>
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-          <small class="field-msg" aria-live="polite"></small>
+    <section>
+      <h3>Fale Conosco!</h3>
+      <address>
+        <p><strong>Endereço:</strong><br>
+        Rua da Esperança, 150 - Bairro Novo Horizonte - São Paulo/SP - CEP: 01234-567</p>
 
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required placeholder="voce@exemplo.com">
-          <small class="field-msg" aria-live="polite"></small>
+        <p><strong>Telefone | Whatsapp:</strong><br>
+        <a href="tel:+551134567890">(11) 3456-7890</a> | 
+        <a href="https://wa.me/5511987654321" target="_blank">(11) 98765-4321</a></p>
 
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
-          <small class="field-msg" aria-live="polite"></small>
+        <p><strong>Email:</strong><br>
+        <a href="mailto:contato@ongvinculodeamor.org.br">contato@ongvinculodeamor.org.br</a></p>
 
-          <div class="mt-16">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <button type="reset" class="btn btn-ghost">Limpar</button>
-          </div>
-        </form>
-      </div>
-
-      <aside class="card col-span-6 col-span-md-12">
-        <h3>Informações de Contato</h3>
-        <address>
-          <p><strong>Endereço</strong><br>
-            Rua da Esperança, 150 — Bairro Novo Horizonte<br>
-            São Paulo/SP — CEP 01234-567</p>
-
-          <p><strong>Telefone | WhatsApp</strong><br>
-            <a href="tel:+551134567890">(11) 3456-7890 (Fixo)</a> |
-            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener"> (11) 98765-4321 (WhatsApp)</a></p>
-
-          <p><strong>E-mail</strong><br>
-            <a href="mailto:contato@ongvinculodeamor.org.br">contato@ongvinculodeamor.org.br</a></p>
-
-          <p><strong>Siga-nos</strong><br>
-            <a href="https://instagram.com/vinculodeamor_oficial" target="_blank" rel="noopener">@vinculodeamor_oficial</a> |
-            <a href="https://facebook.com/ONGVinculodeAmor" target="_blank" rel="noopener">ONG Vínculo de Amor</a></p>
-        </address>
-
-        <div class="alert alert-info mt-16">
-          Dica: mantenha alta legibilidade (contraste e tamanho de fonte).
-        </div>
-      </aside>
+        <p>Siga-nos:</p>
+        <a href="https://instagram.com/vinculodeamor_oficial" target="_blank">@vinculodeamor_oficial</a> |
+        <a href="https://facebook.com/ONGVinculodeAmor" target="_blank">ONG Vínculo de Amor</a>
+      </address>
     </section>
   </main>
-<footer class="site-footer">
-    <div class="container">
-      <p>© 2025 ONG Vínculo de Amor. Todos os direitos reservados.</p>
-    </div>
+
+  <footer>
+    <p>&copy;2025 ONG Vínculo de Amor. Todos os direitos reservados.</p>
   </footer>
 
-  <dialog id="modal-news" class="modal" aria-labelledby="ttl-modal">
-    <form method="dialog" class="modal-content">
-      <h3 id="ttl-modal">Assinar novidades</h3>
-      <p>Deixe seu e-mail para receber atualizações.</p>
-      <input type="email" placeholder="voce@exemplo.com" required>
-      <menu class="modal-actions">
-        <button class="btn btn-ghost">Cancelar</button>
-        <button class="btn btn-primary" value="confirm">Assinar</button>
-      </menu>
-    </form>
-  </dialog>
-
-  <div class="toast" role="status" aria-live="polite" hidden>
-    <span>Ação realizada com sucesso!</span>
-  </div>
-
-  <script src="js/script.js" defer></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

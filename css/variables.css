@@ -1,36 +1,28 @@
-:root{
-  /* Cores principais (8+) */
-  --color-primary-600:#2e7d32; /* verde suave */
-  --color-primary-700:#1b5e20;
-  --color-secondary-600:#ff7043; /* coral */
-  --color-secondary-700:#f4511e;
-  --color-accent-500:#ffd166;    /* amarelo suave */
-  --color-info-600:#2a9d8f;
-  --color-success-600:#43a047;
-  --color-warning-600:#f4a261;
-  --color-danger-600:#e53935;
+/* Variáveis base do Design System */
+:root {
+  --color-primary: #2e7d32;
+  --color-primary-light: #66bb6a;
+  --color-primary-dark: #1b5e20;
 
-  /* Neutros delicados */
-  --color-bg:#fffdf8;         /* off-white quente */
-  --color-surface:#ffffff;    /* cards/menu */
-  --color-soft:#f7f3ea;       /* faixas suaves */
-  --color-text:#2a2a2a;       /* texto principal */
-  --color-muted:#6c6c6c;      /* texto secundário */
-  --color-border:#e6dfd0;     /* linhas leves */
-  --shadow-1:0 2px 8px rgba(0,0,0,.06);
-  --shadow-2:0 10px 24px rgba(0,0,0,.10);
+  --color-secondary: #81c784;
+  --color-secondary-dark: #388e3c;
 
-  /* Tipografia (5+) */
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --fs-12:.75rem; --fs-14:.875rem; --fs-16:1rem; --fs-18:1.125rem;
-  --fs-20:1.25rem; --fs-24:1.5rem; --fs-32:2rem; --fs-48:3rem;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f5f5f5;
+  --color-neutral-300: #e0e0e0;
+  --color-neutral-700: #424242;
+  --color-neutral-900: #212121;
 
-  /* Espaçamentos (escala pedida) */
-  --sp-8:8px; --sp-16:16px; --sp-24:24px; --sp-32:32px; --sp-48:48px; --sp-64:64px;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.75rem;
 
-  /* Grid & container */
-  --container-max:1200px; --grid-gap:24px;
-
-  /* Breakpoints (5) */
-  --bp-xs:360px; --bp-sm:480px; --bp-md:768px; --bp-lg:1024px; --bp-xl:1280px;
+  --sp-8: 8px;
+  --sp-16: 16px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-48: 48px;
+  --sp-64: 64px;
 }
